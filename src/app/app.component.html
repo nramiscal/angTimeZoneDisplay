@@ -1,0 +1,12 @@
+<h1>US Time Zone Display</h1>
+
+<div>
+  <button (click)="changeTimeZone('PST')" [ngStyle] = "{'background-color': Pcolor}">PST</button>
+  <button (click)="changeTimeZone('MST')" [ngStyle] = "{'background-color': Mcolor}">MST</button>
+  <button (click)="changeTimeZone('CST')" [ngStyle] = "{'background-color': Ccolor}">CST</button>
+  <button (click)="changeTimeZone('EST')" [ngStyle] = "{'background-color': Ecolor}">EST</button>
+  <button (click)="clear()">CLEAR</button>
+</div>
+<br>
+
+<h2>{{time|date:'medium'}}</h2> <!-- OR: {{time|date:'yMMMdjms'}} -->
